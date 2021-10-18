@@ -1,0 +1,35 @@
+[
+    {
+        "_id":"0",
+        "image":"https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip",
+        "name": "Dr. Patricia Friedrich",
+        "subject":"Cardiologist",
+        "degree": "MBBS, MD (Cardiology)",
+        "Joining-Date": ""  
+    },  
+    {
+        "_id":"1",
+        "image":"https://image.freepik.com/free-photo/doctor-with-co-workers-analyzing-x-ray_1098-581.jpg",
+        "name": "Dr. Md. Golam Morshed",
+        "subject":"Cardiologist",
+        "degree": "MBBS, FCPS, MRCP, MACP",
+        "Joining-Date": ""  
+    },  
+    {
+        "_id":"2",
+        "image":"https://image.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg",
+        "name": "Dr. Lora",
+        "subject":"ENT",
+        "degree": "MBBS, FCPS (ENT)",
+        "Joining-Date": ""  
+    },  
+    {
+        "_id":"3",
+        "image":"https://st3.depositphotos.com/10654668/i/600/depositphotos_138445604-stock-photo-male-doctor-in-hospital.jpg",
+        "name": "Dr. Mohammad Ali",
+        "subject":"Hematologist",
+        "degree": "MBBS, FCPS (Hematology)",
+        "Joining-Date": ""  
+    }
+ 
+]

@@ -7,6 +7,8 @@ import NotFound from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
+import Equipments from './components/Equipments/Equipments';
+import About from './components/About/About';
 
 
 function App() {
@@ -21,11 +23,17 @@ function App() {
           <Route exact path="/home">
             <Home></Home>
           </Route>
-          <Route exact path="/services">
-            <Services></Services>
+          <Route exact path="/about">
+            <About></About>
+          </Route>
+          <Route exact path="/equipments">
+            <Equipments></Equipments>
           </Route>
           <Route exact path="/login">
             <Login></Login>
+          </Route>
+          <Route exact path="/service">
+            <Services></Services>
           </Route>
           <Route exact path="*">
             <NotFound></NotFound>

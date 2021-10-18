@@ -1,14 +1,18 @@
-import React from 'react';
+import Button from '@restart/ui/esm/Button';
+import React, { useEffect, useState } from 'react';
+import { Row } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
-import Login from '../Login/Login';
-import Services from '../Services/Services';
+import Doctors from '../Doctors/Doctors';
+import Homes from '../Homes/Homes';
+import MedInfo from '../MedInfo/MedInfo';
 
 const Home = () => {
     return (
         <div id="home">
             <Banner></Banner>
-            <Services></Services>
-            <Login></Login>
+            <MedInfo></MedInfo>
+            <Homes></Homes>
+            <Doctors></Doctors>
         </div>
     );
 };

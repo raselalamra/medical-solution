@@ -1,0 +1,7 @@
+.doctor:hover{
+    transform: scale(1.02);
+    transition: 1s; 
+}
+.card-size{
+    height: 550px;
+}
