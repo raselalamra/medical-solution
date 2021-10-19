@@ -46,12 +46,12 @@ const LogIn = () => {
                     </div>
 
                     <div className="right">
-                        <span className="loginwith">New here<br />just Sign up</span>
+                        <span className="loginwith">Sign up</span>
 
                         <button className="social-signin facebook" onClick={goToSignUp}> Sign Up with Email</button>
                         <button className="social-signin google" onClick={googleSignIn}>Log in with Google+</button>
                     </div>
-                    <div className="or">OR</div>
+                    
                 </div>
             </div>
 
