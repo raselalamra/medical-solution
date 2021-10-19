@@ -21,7 +21,7 @@ const Footer = () => {
                     <Link to="/about">About</Link>
 
                     <Link to="/service">Service</Link>
-                    <Link to="/founders">Founder</Link>
+                    <Link to="/Equipment">Equipment</Link>
       
                     </p> 
 
@@ -37,7 +37,7 @@ const Footer = () => {
 
                     <div >
                     <FontAwesomeIcon className="icon" icon={faPhone} size = '2x' />
-                        <p>+5.444.444.4444</p>
+                        <p>+5.999.999.9999</p>
                     </div>
 
                     <div >

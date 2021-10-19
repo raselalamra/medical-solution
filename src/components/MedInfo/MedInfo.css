@@ -12,16 +12,13 @@ hr{
     align-items: center;
     margin-top: 40px;
     margin-bottom: 60px;
+    margin-left: 7px;
 }
 
-/* @media only screen and (max-width: 688px) {
-    .responsive{
+ @media only screen and (max-width: 688px) {
+    .medical-helth{
         grid-template-columns: repeat(1, 1fr);
+        
     }  
 }
 
-@media only screen and (min-width:689px) and (max-width: 991px) {
-   .responsive{
-       grid-template-columns: repeat(4, 1fr);
-   } 
-} */

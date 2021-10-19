@@ -1,9 +1,10 @@
 import React from 'react';
+import './Equipment.css';
 
 const Equipment = (props) => {
     const {_id, name, description, picture } = props.equipment
     return (
-        <div>
+        <div className="equipment">
             {
                 _id %2 === 0 ? <div className="card mb-3" style={{ "maxWidth": "100%" }}>
                     <div className="row g-0"> 
