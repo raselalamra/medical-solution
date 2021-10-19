@@ -1,6 +1,6 @@
-import Button from '@restart/ui/esm/Button';
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import Doctors from '../Doctors/Doctors';
 import Homes from '../Homes/Homes';
@@ -12,6 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <MedInfo></MedInfo>
             <Homes></Homes>
+            <Link  to="/services"><button className="btn btn-primary">See More</button></Link>
             <Doctors></Doctors>
         </div>
     );

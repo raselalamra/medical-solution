@@ -15,8 +15,7 @@ const Services = () => {
 
     return (
         <div className="container">
-
-
+                  
             <Row xs={1} md={3}
                 className="g-4 mt-4 mb-4">
                 {
@@ -25,6 +24,7 @@ const Services = () => {
                     ></Cards>)
                 }
             </Row>
+
         </div>
     );
 };
