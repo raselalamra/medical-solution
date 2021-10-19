@@ -15,10 +15,7 @@ const Banner = () => {
       src={banner1}
       alt="First slide"
     />
-    {/* <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Not everyone can sing like a nightingale in Medical helth.</p>
-    </Carousel.Caption> */}
+    
   </Carousel.Item>
   <Carousel.Item>
     <img
@@ -27,10 +24,7 @@ const Banner = () => {
       alt="Second slide"
     />
 
-    {/* <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Singing a song that we know by ourself or with others triggers the reward.</p>
-    </Carousel.Caption> */}
+    
   </Carousel.Item>
   <Carousel.Item>
     <img
@@ -39,10 +33,6 @@ const Banner = () => {
       alt="Third slide"
     />
 
-    {/* <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>American Heart Association News covers heart and brain health.</p>
-    </Carousel.Caption> */}
   </Carousel.Item>
 </Carousel>  
         </>
