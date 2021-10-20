@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import UseAuth from '../../Hooks/UseAuth';
+import './Signup.css';
 
-const LogIn = () => {
-    const { handleGoogleSignIn, logInEmailPassword, error } = UseAuth();
+const Signup = () => {
+    const { handleGoogleSignIn, registerByEmailPass, error } = UseAuth()
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
+
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -16,47 +18,50 @@ const LogIn = () => {
     const handlePass = (e) => {
         setPassword(e.target.value);
     }
-    const handleLogIn = () => {
-        logInEmailPassword(email, password)
+    const handleRegister = () => {
+        registerByEmailPass(email, password)
     }
-    const goToSignUp = () => {
-        history.push('/signup')
+    const goToLogIn = () => {
+        history.push('/logIn')
     }
     const googleSignIn = () => {
         handleGoogleSignIn()
             .then((result) => {
                 history.push(redirect_uri);
             })
-
     }
-    const text = 'auth/wrong-password'
+    const text = "auth/email-already-in-use"
     return (
-        <div>
+
+        <div className="mt-5">
+
             <div>
                 <div id="login-box">
                     <div className="left">
-                        <h1> Log In</h1>
+                        <h1>Sign up</h1>
+
+
                         <input type="text" name="email" placeholder="E-mail" onChange={handleEmail} />
                         <input type="password" name="password" placeholder="Password" onChange={handlePass} />
-
+                        <input type="password" name="password2" placeholder="Retype password" />
                         {
-                            error === text ? <span className="text-danger">Wrong Password</span> : <span className="text-white" >Wrong Password</span>
+                            error === text ? <span className="text-danger hidden">Give a new email</span> : <span className="text-white hidden" > Give a new email</span>
                         }
-                        <input type="submit" name="signup_submit" value="Log in" onClick={handleLogIn} />
+                        <input type="submit" name="signup_submit" value="Sign Up" onClick={handleRegister} />
+
                     </div>
 
                     <div className="right">
-                        <span className="loginwith">Sign up</span>
+                        <span className="loginwith">Sign in with<br />Email Or Google</span>
 
-                        <button className="social-signin facebook" onClick={goToSignUp}> Sign Up with Email</button>
-                        <button className="social-signin google" onClick={googleSignIn}>Log in with Google+</button>
+                        <button className="social-signin facebook" onClick={goToLogIn} >Log in with Email</button>
+                        <button className="social-signin google" onClick={googleSignIn}>Log in with Google</button>
                     </div>
                     
                 </div>
             </div>
-
         </div>
     );
 };
 
-export default LogIn;
+export default Signup;

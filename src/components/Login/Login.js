@@ -4,7 +4,7 @@ import UseAuth from '../../Hooks/UseAuth';
 import './LogIn.css';
 
 const LogIn = () => {
-    const { handleGoogleSignIn, logInEmailPassword,error } = UseAuth();
+    const { handleGoogleSignIn, logInEmailPassword, error } = UseAuth();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const location = useLocation();
@@ -30,7 +30,7 @@ const LogIn = () => {
             })
 
     }
-const text = 'auth/wrong-password'
+    const text = 'auth/wrong-password'
     return (
         <div>
             <div>
@@ -39,19 +39,20 @@ const text = 'auth/wrong-password'
                         <h1> Log In</h1>
                         <input type="text" name="email" placeholder="E-mail" onChange={handleEmail} />
                         <input type="password" name="password" placeholder="Password" onChange={handlePass} />
-                         
+
                         {
-                             error === text ?<span className="text-danger">Wrong Password</span> : <span className="text-white" >Wrong Password</span>
-                         }
+                            error === text ? <span className="text-danger hidden">Incorrect Password</span> : <span className="text-white hidden" >Incorrect Password</span>
+                        }
                         <input type="submit" name="signup_submit" value="Log in" onClick={handleLogIn} />
                     </div>
 
                     <div className="right">
                         <span className="loginwith">Sign up</span>
 
-                        <button className="social-signin facebook" onClick={goToSignUp}> Register with Email</button>
+                        <button className="social-signin facebook" onClick={goToSignUp}> Sign Up with Email</button>
                         <button className="social-signin google" onClick={googleSignIn}>Log in with Google+</button>
                     </div>
+                    
                 </div>
             </div>
 

@@ -3,12 +3,13 @@
   outline: none;
 }
 
+
 #login-box {
   position: relative;
   margin: 5% auto;
   width: 600px;
   height: 400px;
-  background: #fff;
+  background: #b9e1f0;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -38,8 +39,8 @@ input[type="password"] {
   width: 220px;
   height: 32px;
   border: none;
-  border-bottom: 1px solid #aaa;
-  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 15px;
   transition: 0.2s ease;
@@ -48,7 +49,7 @@ input[type="password"] {
 input[type="text"]:focus,
 input[type="password"]:focus {
   border-bottom: 2px solid #16a085;
-  color: #16a085;
+  color: #00BDFF;
   transition: 0.2s ease;
 }
 
@@ -56,11 +57,11 @@ input[type="submit"] {
   margin-top: 28px;
   width: 120px;
   height: 32px;
-  background: #16a085;
+  background: #00BDFF;
   border: none;
   border-radius: 2px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   transition: 0.1s ease;
@@ -86,7 +87,7 @@ input[type="submit"]:active {
   left: 280px;
   width: 40px;
   height: 40px;
-  background: #ddd;
+  background: #DDD;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   line-height: 40px;
@@ -101,7 +102,6 @@ input[type="submit"]:active {
   padding: 40px;
   width: 300px;
   height: 400px;
-  background: url("https://goo.gl/YbktSj");
   background-size: cover;
   background-position: center;
   border-radius: 0 2px 2px 0;
@@ -111,7 +111,7 @@ input[type="submit"]:active {
   display: block;
   margin-bottom: 40px;
   font-size: 28px;
-  color: rgba(46, 43, 43, 0.884);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -121,8 +121,8 @@ button.social-signin {
   height: 36px;
   border: none;
   border-radius: 2px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   transition: 0.2s ease;
   cursor: pointer;
@@ -139,20 +139,19 @@ button.social-signin:active {
   transition: 0.2s ease;
 }
 
-button.social-signin.facebook {
-  background: #32508e;
+button.social-signin.email {
+  background: #32508E;
 }
 
 button.social-signin.twitter {
-  background: #55acee;
+  background: #55ACEE;
 }
 
 button.social-signin.google {
-  background: #6ad38d;
+  background: #0e74a3;
 }
 
-
-@media  (max-width: 380px){
+@media  (max-width: 767px){
   #login-box {
     position: relative;
     margin: 5% auto;
@@ -162,18 +161,21 @@ button.social-signin.google {
     border-radius: 2px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 40%);
 }
+.hidden{
+    display: block;
+}
 
 .left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  display: flex;
   box-sizing: border-box;
   padding: 40px;
   width: 100%;
   height: 391px;
   justify-content: center;
-}
+  flex-direction: column;
+  align-items: center;
+ }
+ 
 
 .right {
   position: absolute;

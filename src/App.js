@@ -5,7 +5,6 @@ import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Services from './components/Services/Services';
 import NotFound from './components/NotFound/NotFound';
-import Equipments from './components/Equipments/Equipments';
 
 
 import {
@@ -19,6 +18,7 @@ import PrivateRoute from './PrivaeRoute/PrivateRoute';
 import LogIn from './components/LogIn/LogIn';
 import Home from './components/Home/Home';
 import SingleServices from './components/SingleServices/SingleServices';
+import Departments from './components/Departments/Departments';
 
 
 function App() {
@@ -40,12 +40,12 @@ function App() {
             <PrivateRoute exact path="/service/:id">
               <SingleServices></SingleServices>
             </PrivateRoute>
-            <Route exact path="/equipment">
-              <Equipments></Equipments>
-            </Route>
             <Route exact path="/about">
               <About></About>
             </Route>
+            <PrivateRoute exact path="/departments">
+              <Departments></Departments>
+            </PrivateRoute>
             <Route exact path="/signup">
               < Signup></ Signup>
             </Route>

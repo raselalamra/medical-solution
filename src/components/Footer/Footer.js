@@ -17,11 +17,9 @@ const Footer = () => {
 
                      <p className="footer-links">
                     <Link to="/home">Home</Link>
-
                     <Link to="/about">About</Link>
-
                     <Link to="/services">Services</Link>
-                    <Link to="/Equipment">Equipment</Link>
+                    <Link to="/departments">Departments</Link>
       
                     </p> 
 
